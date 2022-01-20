@@ -1,18 +1,26 @@
 package com.capgemini.xcorps.entity;
-import java.util.ArrayList;
 
 public class City {
 
+	private String cityId;
+
 	private String cityName;
 
-	private ArrayList<Theatre> theatres;
+	private String state;
 
-	public City() {
-	}
+	private int zipCode;
 
 	public City(String cityName) {
+		super();
 		this.cityName = cityName;
-		theatres = new ArrayList();
+	}
+
+	public String getCityId() {
+		return cityId;
+	}
+
+	public void setCityId(String cityId) {
+		this.cityId = cityId;
 	}
 
 	public String getCityName() {
@@ -23,14 +31,25 @@ public class City {
 		this.cityName = cityName;
 	}
 
-	public ArrayList<Theatre> getTheatres() {
-		return theatres;
+	public String getState() {
+		return state;
 	}
 
-	public void setTheatres(ArrayList<Theatre> theatres) {
-		this.theatres = theatres;
+	public void setState(String state) {
+		this.state = state;
 	}
 
+	public int getZipCode() {
+		return zipCode;
+	}
 
+	public void setZipCode(int zipCode) {
+		this.zipCode = zipCode;
+	}
+
+	@Override
+	public String toString() {
+		return "City [cityId=" + cityId + ", cityName=" + cityName + ", state=" + state + ", zipCode=" + zipCode + "]";
+	}
 
 }

@@ -1,19 +1,24 @@
 package com.capgemini.xcorps.entity;
-import java.util.ArrayList;
 
 public class Theatre {
 
+	private String theatreId;
+
 	private String theatreName;
 
-	private ArrayList<Movie> movies;
-
-	public Theatre() {
-
-	}
+	private String screen;
 
 	public Theatre(String theatreName) {
+		super();
 		this.theatreName = theatreName;
-		movies = new ArrayList<Movie>();
+	}
+
+	public String getTheatreId() {
+		return theatreId;
+	}
+
+	public void setTheatreId(String theatreId) {
+		this.theatreId = theatreId;
 	}
 
 	public String getTheatreName() {
@@ -24,13 +29,17 @@ public class Theatre {
 		this.theatreName = theatreName;
 	}
 
-	public ArrayList<Movie> getMovies() {
-		return movies;
+	public String getScreen() {
+		return screen;
 	}
 
-	public void setMovies(ArrayList<Movie> movies) {
-		this.movies = movies;
+	public void setScreen(String screen) {
+		this.screen = screen;
 	}
 
+	@Override
+	public String toString() {
+		return "Theatre [theatreId=" + theatreId + ", theatreName=" + theatreName + ", screen=" + screen + "]";
+	}
 
 }

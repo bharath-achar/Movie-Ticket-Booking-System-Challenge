@@ -1,7 +1,20 @@
-Bangalore,Pushpanjali_theatre,Rajahuli,Yash;Meghana,7.2,"9:00;13:00,17:00"
-Mangalore,Sangeetha_theatre,Robert,Darshan;Asha Bhat,8.7,"9:00;13:00,17:00;18:00"
-Bangalore,Kapali_theatre,KGF,Yash;Srinidhi Shetty,8.2,"9:00;11:30;13:00,17:00"
-Mysore,Triveni_theatre,Bahubali,Prabhas;Anushka,8,"9:00;13:00,17:00"
-Bangalore,Lakshmi_theatre,Vikram Vedha,Vijay Sethupathi;Shraddha Srinath,7.5,"9:00;10:00;13:00,17:00"
-Hubli,Vaibhav_theatre,Vaikuntapuram,Allu Arjun;Pooja hegde,7.8,"9:00;13:00,17:00"
-Chikmagalur,Arjun_theatre,Rajahuli,Yash;Meghana,7.2,"9:00;13:00,17:00;18:00"
+Bangalore,Pushpanjali-theatre,Rajahuli,Yash;Meghana,7.2,9:00;13:00;17:00
+Mangalore,Sangeetha-theatre,Robert,Darshan;Asha Bhat,8.7,9:00;13:00;17:00;18:00
+Bangalore,Kapali-theatre,KGF,Yash;Srinidhi Shetty,8.2,9:00;11:30;13:00;17:00
+Mysore,Triveni-theatre,Bahubali,Prabhas;Anushka,8,9:00;13:00;17:00
+Bangalore,Lakshmi-theatre,Vikram Vedha,Vijay Sethupathi;Shraddha Srinath,7.5,9:00;10:00;13:00;17:00
+Hubli,Vaibhav-theatre,Vaikuntapuram,Allu Arjun;Pooja hegde,7.8,9:00;13:00;17:00
+Chikmagalur,Arjun-theatre,Rajahuli,Yash;Meghana,7.2,9:00;13:00;17:00;18:00
+Hyderabad,Ganga,HIT,vishwaksen,6.4,9:00;17:00
+Warangal,Venkatadri,Pushpa,Allu Arjun ; rashmika ,9.2,9:00; 13:45;16:30;20:20;22:45
+Secunderabad,Trinity,The Wolf of Wall Street,Leonardo DiCaprio;Jordan Belfort,9.5,13:40;21:40
+Madhapur,AMB,The Pursuit of Happyness,Will Smith,9.3,11:15 ; 16:40 ; 21:45
+Sri Nagar,SVR,The Social Network,Jesse Eisenberg,9,10:45 ; 21:30 ; 19:30
+Panducherry,PVR,Steve Jobs,Michael Fassbender,8.9,11:15 ; 16:40 ; 21:45
+Dilsukhnagar,Asian Ganga,Scam 1992,Pratik Gandhi,9.5,10:45 ; 21:30 ; 19:30; 22:55
+Madhapur,Multiplex,The Big Bull,Abhishek Bachchan,9.2,11:15 ; 16:40 ; 21:45 ; 13:45
+Madhapur,Multiplex,Money Heist,Clvaro Morte ; Alba Flores ,9.3,9:00;13:00;17:00
+Madhapur,Vaibhav-theatre,ANR,Ram Charan ; NTR,9.4,11:15 ; 16:40 ; 21:45
+Kondapur,Lakshmi-theatre,RRR,Ram Charan ; NTR,9,10:45 ; 21:30 ; 19:30
+Chikmagalur,Arjun-theatre,Vaikuntapuram,Allu Arjun;Pooja hegde,7.8,13:40;21:40
+Chikmagalur,Arjun-theatre,The Big Bull,Abhishek Bachchan,9.2,11:15 ; 16:40 ; 21:45 ; 13:45

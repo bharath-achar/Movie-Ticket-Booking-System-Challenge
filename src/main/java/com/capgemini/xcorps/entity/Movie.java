@@ -1,61 +1,66 @@
 package com.capgemini.xcorps.entity;
-import java.util.ArrayList;
 
 public class Movie {
 
-	private String movieName;
+	private String movieId;
 
-	private ArrayList<Theatre> theatres;
+	private String movieTitle;
 
-	private ArrayList<String> showTimes;
+	private String genre;
 
-	private double rating;
+	private String director;
 
-	public Movie() {
+	private String rating;
 
+	public Movie(String movieTitle) {
+		super();
+		this.movieTitle = movieTitle;
 	}
 
-	public Movie(String movieName) {
-		this.movieName = movieName;
-		theatres = new ArrayList<Theatre>();
+	public String getMovieId() {
+		return movieId;
 	}
 
-	public String getMovieName() {
-		return movieName;
+	public void setMovieId(String movieId) {
+		this.movieId = movieId;
 	}
 
-	public void setMovieName(String movieName) {
-		this.movieName = movieName;
+	public String getMovieTitle() {
+		return movieTitle;
 	}
 
-	public ArrayList<Theatre> getTheatres() {
-		return theatres;
+	public void setMovieTitle(String movieTitle) {
+		this.movieTitle = movieTitle;
 	}
 
-	public void setTheatres(ArrayList<Theatre> theatres) {
-		this.theatres = theatres;
+	public String getGenre() {
+		return genre;
 	}
 
-	public ArrayList<String> getShowTimes() {
-		return showTimes;
+	public void setGenre(String genre) {
+		this.genre = genre;
 	}
 
-	public void setShowTimes(ArrayList<String> showTimes) {
-		this.showTimes = showTimes;
+	public String getDirector() {
+		return director;
 	}
 
-	public double getRating() {
+	public void setDirector(String director) {
+		this.director = director;
+	}
+
+	public String getRating() {
 		return rating;
 	}
 
-	public void setRating(double rating) {
+	public void setRating(String rating) {
 		this.rating = rating;
 	}
 
 	@Override
 	public String toString() {
-		return "Movie [movieName=" + movieName + ", theatres=" + theatres + ", showTimes=" + showTimes + ", rating="
-				+ rating + "]";
+		return "Movie [movieId=" + movieId + ", movieTitle=" + movieTitle + ", genre=" + genre + ", director="
+				+ director + ", rating=" + rating + "]";
 	}
 
 }
