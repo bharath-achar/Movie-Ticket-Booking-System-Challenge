@@ -14,7 +14,7 @@ public class MovieController {
 
 	MovieService movieService = new MovieServiceImpl();
 
-	// GET /allCityTheatres
+	// GET /cityTheatres
 	public Set<String> cityTheatres() throws FileNotFoundException {
 		return movieService.cityTheatres().keySet();
 	}
@@ -24,7 +24,7 @@ public class MovieController {
 		return movieService.particularCityTheatres(city);
 	}
 
-	// GET /allMovieTheatres
+	// GET /movieTheatres
 	public Set<String> movieTheatres() throws FileNotFoundException {
 		return movieService.movieTheatres().keySet();
 	}
@@ -34,7 +34,7 @@ public class MovieController {
 		return movieService.particularMovieTheatres(movie);
 	}
 
-	// GET /allTheatreMovies
+	// GET /theatreMovies
 	public Set<String> theatreMovies() throws FileNotFoundException {
 		return movieService.theatreMovies().keySet();
 	}
@@ -44,7 +44,7 @@ public class MovieController {
 		return movieService.particularTheatreMovies(theatre);
 	}
 
-	// GET /allCityTheatreMovies
+	// GET /cityTheatreMovies
 	public SortedMap<String, TreeMap<String, List<String>>> cityTheatreMovies() throws FileNotFoundException {
 		return movieService.cityTheatreMovies();
 	}
@@ -54,7 +54,7 @@ public class MovieController {
 		return movieService.particularCityTheatreMovies(city);
 	}
 
-	// GET /allMoviesWithRating/rating
+	// GET /movieRating/rating
 	public Set<String> listMoviesWithRating(Double rating) throws FileNotFoundException {
 		Set<String> listMoviesWithRating1 = new TreeSet<>();
 

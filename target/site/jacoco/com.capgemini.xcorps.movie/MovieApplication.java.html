@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MovieApplication.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Movie Ticket Bookig System</a> &gt; <a href="index.source.html" class="el_package">com.capgemini.xcorps.movie</a> &gt; <span class="el_source">MovieApplication.java</span></div><h1>MovieApplication.java</h1><pre class="source lang-java linenums">package com.capgemini.xcorps.movie;
+
+import java.io.IOException;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+import com.capgemini.xcorps.controller.MovieController;
+
+<span class="nc" id="L9">public class MovieApplication {</span>
+
+	public static void main(String[] args) throws IOException {
+
+<span class="nc" id="L13">		MovieController movieController = new MovieController();</span>
+
+<span class="nc" id="L15">		Scanner scanner = new Scanner(System.in);</span>
+
+		while (true) {
+<span class="nc" id="L18">			System.out.println(&quot;\nWelcome to Online Movie Ticket System.\nPlease choose one of the methods!!!&quot;);</span>
+<span class="nc" id="L19">			System.out.println(</span>
+					&quot;1. Display list of theaters in a particular city\n2. Display list of theaters playing a particular movie\n3. Display list of movies played in a particular theater\n4. Display list of movies played in all the theaters in a particular city\n5. Display list of movies above certain rating\n6. Display all the show times for a particular movie in a particular theater\n0. Exit\n&quot;);
+
+			try {
+<span class="nc" id="L23">				int userInput = scanner.nextInt();</span>
+<span class="nc" id="L24">				System.out.println();</span>
+
+<span class="nc bnc" id="L26" title="All 8 branches missed.">				switch (userInput) {</span>
+				case 1:
+<span class="nc" id="L28">					System.out.println(&quot;List of cities available in Database are : &quot; + movieController.cityTheatres());</span>
+<span class="nc" id="L29">					System.out.println(&quot;\nPlease select city to view theatres&quot;);</span>
+<span class="nc" id="L30">					String cityInput = scanner.next();</span>
+<span class="nc" id="L31">					System.out.println();</span>
+<span class="nc bnc" id="L32" title="All 2 branches missed.">					if (!movieController.particularCityTheatres(cityInput).isEmpty()) {</span>
+<span class="nc" id="L33">						System.out.println(&quot;Result : &quot; + movieController.particularCityTheatres(cityInput));</span>
+					} else
+<span class="nc" id="L35">						System.err.println(&quot;Results not found!!!&quot;);</span>
+
+<span class="nc" id="L37">					continue;</span>
+				case 2:
+<span class="nc" id="L39">					System.out.println(&quot;List of movies available in the database : &quot; + movieController.movieTheatres());</span>
+<span class="nc" id="L40">					System.out.println(&quot;\nPlease select movie to view theatres&quot;);</span>
+<span class="nc" id="L41">					String movieInput = scanner.next();</span>
+<span class="nc" id="L42">					System.out.println();</span>
+<span class="nc bnc" id="L43" title="All 2 branches missed.">					if (!movieController.particularMovieTheatres(movieInput).isEmpty()) {</span>
+<span class="nc" id="L44">						System.out.println(&quot;Result : &quot; + movieController.particularMovieTheatres(movieInput));</span>
+					} else {
+<span class="nc" id="L46">						System.err.println(&quot;Results not found!!!&quot;);</span>
+					}
+<span class="nc" id="L48">					continue;</span>
+				case 3:
+<span class="nc" id="L50">					System.out</span>
+<span class="nc" id="L51">							.println(&quot;List of theatres available in the Database : &quot; + movieController.theatreMovies());</span>
+<span class="nc" id="L52">					System.out.println(&quot;\nPlease select theatre to view Movies&quot;);</span>
+<span class="nc" id="L53">					String theatreInput = scanner.next();</span>
+<span class="nc" id="L54">					System.out.println();</span>
+<span class="nc bnc" id="L55" title="All 2 branches missed.">					if (!movieController.particularTheatreMovies(theatreInput).isEmpty()) {</span>
+<span class="nc" id="L56">						System.out.println(&quot;Result : &quot; + movieController.particularTheatreMovies(theatreInput));</span>
+					} else {
+<span class="nc" id="L58">						System.err.println(&quot;Results not found!!!&quot;);</span>
+					}
+<span class="nc" id="L60">					continue;</span>
+
+				case 4:
+<span class="nc" id="L63">					System.out.println(&quot;List of cities available in the Database : &quot;</span>
+<span class="nc" id="L64">							+ movieController.cityTheatreMovies().keySet());</span>
+<span class="nc" id="L65">					System.out.println(&quot;\nPlease select city to view theatre with movies played&quot;);</span>
+<span class="nc" id="L66">					String cityInput1 = scanner.next();</span>
+<span class="nc bnc" id="L67" title="All 2 branches missed.">					if (movieController.particularCityTheatreMovies(cityInput1) != null) {</span>
+<span class="nc" id="L68">						System.out.println(&quot;Result : &quot; + movieController.particularCityTheatreMovies(cityInput1));</span>
+					} else {
+<span class="nc" id="L70">						System.err.println(&quot;Results not found!!!&quot;);</span>
+					}
+<span class="nc" id="L72">					continue;</span>
+
+				case 5:
+<span class="nc" id="L75">					System.out.println(&quot;Please enter the average rating to view best movies&quot;);</span>
+<span class="nc" id="L76">					Double ratingInput = null;</span>
+					try {
+<span class="nc" id="L78">						ratingInput = scanner.nextDouble();</span>
+<span class="nc" id="L79">						System.out.println();</span>
+<span class="nc bnc" id="L80" title="All 2 branches missed.">						if (!movieController.listMoviesWithRating(ratingInput).isEmpty()) {</span>
+<span class="nc" id="L81">							System.out.println(&quot;Result : &quot; + movieController.listMoviesWithRating(ratingInput));</span>
+						} else {
+<span class="nc" id="L83">							System.err.println(&quot;Results not found!!!&quot;);</span>
+						}
+
+<span class="nc" id="L86">					} catch (InputMismatchException e) {</span>
+<span class="nc" id="L87">						System.err.println(&quot;Please enter proper value&quot;);</span>
+<span class="nc" id="L88">						break;</span>
+<span class="nc" id="L89">					}</span>
+<span class="nc" id="L90">					continue;</span>
+
+				case 6:
+<span class="nc" id="L93">					System.out.println(movieController.theatreMovieShowTimes().keySet());</span>
+<span class="nc" id="L94">					System.out.println(&quot;\nPlease select theatre to view movie with the show timings&quot;);</span>
+<span class="nc" id="L95">					String theatreInput1 = scanner.next();</span>
+<span class="nc" id="L96">					System.out.println();</span>
+<span class="nc bnc" id="L97" title="All 2 branches missed.">					if (movieController.particluarTheatreMovieShowTimes(theatreInput1) != null) {</span>
+<span class="nc" id="L98">						System.out.println(movieController.particluarTheatreMovieShowTimes(theatreInput1));</span>
+					} else {
+<span class="nc" id="L100">						System.err.println(&quot;Results not found!!!&quot;);</span>
+					}
+<span class="nc" id="L102">					continue;</span>
+				case 0:
+<span class="nc" id="L104">					System.out.println(&quot;\nThank you.... Visit again&quot;);</span>
+<span class="nc" id="L105">					return;</span>
+				default:
+<span class="nc" id="L107">					System.err.println(&quot;Please select the proper choice\n\n&quot;);</span>
+<span class="nc" id="L108">					continue;</span>
+				}
+
+<span class="nc" id="L111">			} catch (InputMismatchException e) {</span>
+<span class="nc" id="L112">				System.err.println(&quot;Please enter proper values... Restart the application!!!&quot;);</span>
+<span class="nc" id="L113">				break;</span>
+<span class="nc" id="L114">			}</span>
+		}
+
+<span class="nc" id="L117">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MovieServiceImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Movie Ticket Bookig System</a> &gt; <a href="index.source.html" class="el_package">com.capgemini.xcorps.service</a> &gt; <span class="el_source">MovieServiceImpl.java</span></div><h1>MovieServiceImpl.java</h1><pre class="source lang-java linenums">package com.capgemini.xcorps.service;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map.Entry;
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
+
+import com.capgemini.xcorps.entity.Movie;
+import com.capgemini.xcorps.entity.Theatre;
+import com.capgemini.xcorps.util.MovieConstants;
+
+<span class="fc" id="L18">public class MovieServiceImpl implements MovieService {</span>
+
+	Scanner scanner;
+
+	List&lt;TreeMap&lt;String, Set&lt;String&gt;&gt;&gt; arraylistObject;
+
+<span class="fc" id="L24">	TreeMap&lt;String, Set&lt;String&gt;&gt; cityTheatresList = new TreeMap&lt;&gt;();</span>
+<span class="fc" id="L25">	TreeMap&lt;String, Set&lt;String&gt;&gt; movieTheatresList = new TreeMap&lt;&gt;();</span>
+<span class="fc" id="L26">	TreeMap&lt;String, Set&lt;String&gt;&gt; theatreMoviesList = new TreeMap&lt;&gt;();</span>
+<span class="fc" id="L27">	TreeMap&lt;String, TreeMap&lt;String, List&lt;String&gt;&gt;&gt; cityTheatreMoviesList = new TreeMap&lt;&gt;();</span>
+<span class="fc" id="L28">	TreeMap&lt;String, TreeMap&lt;String, List&lt;String&gt;&gt;&gt; theatreMoviesShowsList = new TreeMap&lt;&gt;();</span>
+
+	public TreeMap&lt;String, Set&lt;String&gt;&gt; cityTheatres() throws FileNotFoundException {
+
+<span class="fc" id="L32">		scanner = new Scanner(new File(MovieConstants.FILE_PATH));</span>
+<span class="fc bfc" id="L33" title="All 2 branches covered.">		while (scanner.hasNextLine()) {</span>
+<span class="fc" id="L34">			String[] database = scanner.nextLine().split(&quot;,&quot;);</span>
+
+<span class="fc bfc" id="L36" title="All 2 branches covered.">			for (String city : Arrays.asList(database[0])) {</span>
+<span class="fc" id="L37">				cityTheatresList.put(city, new TreeSet&lt;&gt;());</span>
+<span class="fc bfc" id="L38" title="All 2 branches covered.">				for (String theatre : Arrays.asList(database[1])) {</span>
+<span class="fc" id="L39">					Theatre newTheatre = new Theatre(theatre);</span>
+<span class="fc" id="L40">					cityTheatresList.get(city).add(newTheatre.getTheatreName());</span>
+<span class="fc" id="L41">				}</span>
+
+<span class="fc" id="L43">			}</span>
+
+<span class="fc" id="L45">		}</span>
+
+<span class="fc" id="L47">		return cityTheatresList;</span>
+	}
+
+	public List&lt;TreeMap&lt;String, Set&lt;String&gt;&gt;&gt; particularCityTheatres(String city) throws FileNotFoundException {
+
+<span class="fc" id="L52">		TreeMap&lt;String, Set&lt;String&gt;&gt; cityTheatresMap = new TreeMap&lt;&gt;();</span>
+<span class="fc" id="L53">		arraylistObject = new ArrayList&lt;&gt;();</span>
+
+<span class="fc bfc" id="L55" title="All 2 branches covered.">		if (city == null) {</span>
+<span class="fc" id="L56">			throw new NullPointerException(&quot;Please enter valid values&quot;);</span>
+		} else {
+<span class="pc bpc" id="L58" title="1 of 2 branches missed.">			for (Entry&lt;String, Set&lt;String&gt;&gt; entry : cityTheatresList.entrySet()) {</span>
+<span class="nc" id="L59">				String key = entry.getKey();</span>
+<span class="nc bnc" id="L60" title="All 2 branches missed.">				if (key.toLowerCase().contains(city.toLowerCase())) {</span>
+<span class="nc" id="L61">					cityTheatresMap.put(entry.getKey(), new TreeSet&lt;&gt;());</span>
+<span class="nc" id="L62">					cityTheatresMap.get(key).addAll(entry.getValue());</span>
+<span class="nc bnc" id="L63" title="All 2 branches missed.">					if (!arraylistObject.contains(cityTheatresMap)) {</span>
+<span class="nc" id="L64">						arraylistObject.add(cityTheatresMap);</span>
+					}
+				}
+<span class="nc" id="L67">			}</span>
+		}
+<span class="fc" id="L69">		return arraylistObject;</span>
+	}
+
+	public TreeMap&lt;String, Set&lt;String&gt;&gt; movieTheatres() throws FileNotFoundException {
+
+<span class="fc" id="L74">		scanner = new Scanner(new File(MovieConstants.FILE_PATH));</span>
+<span class="fc bfc" id="L75" title="All 2 branches covered.">		while (scanner.hasNextLine()) {</span>
+<span class="fc" id="L76">			String[] database1 = scanner.nextLine().split(&quot;,&quot;);</span>
+<span class="fc bfc" id="L77" title="All 2 branches covered.">			for (String movie : Arrays.asList(database1[2])) {</span>
+<span class="fc" id="L78">				movieTheatresList.put(movie, new TreeSet&lt;&gt;());</span>
+<span class="fc bfc" id="L79" title="All 2 branches covered.">				for (String theatre : Arrays.asList(database1[1])) {</span>
+
+<span class="fc" id="L81">					Theatre newTheatre = new Theatre(theatre);</span>
+<span class="fc" id="L82">					movieTheatresList.get(movie).add(newTheatre.getTheatreName());</span>
+
+<span class="fc" id="L84">				}</span>
+<span class="fc" id="L85">			}</span>
+<span class="fc" id="L86">		}</span>
+
+<span class="fc" id="L88">		return movieTheatresList;</span>
+
+	}
+
+	public List&lt;TreeMap&lt;String, Set&lt;String&gt;&gt;&gt; particularMovieTheatres(String movie) throws FileNotFoundException {
+
+<span class="fc" id="L94">		TreeMap&lt;String, Set&lt;String&gt;&gt; movieTheatresMap = new TreeMap&lt;&gt;();</span>
+<span class="fc" id="L95">		arraylistObject = new ArrayList&lt;&gt;();</span>
+
+<span class="pc bpc" id="L97" title="1 of 2 branches missed.">		for (Entry&lt;String, Set&lt;String&gt;&gt; entry : movieTheatresList.entrySet()) {</span>
+<span class="nc" id="L98">			String key = entry.getKey();</span>
+<span class="nc bnc" id="L99" title="All 2 branches missed.">			if (key.toLowerCase().contains(movie.toLowerCase())) {</span>
+<span class="nc" id="L100">				movieTheatresMap.put(key, new TreeSet&lt;&gt;());</span>
+<span class="nc" id="L101">				movieTheatresMap.get(key).addAll(entry.getValue());</span>
+<span class="nc bnc" id="L102" title="All 2 branches missed.">				if (!arraylistObject.contains(movieTheatresMap)) {</span>
+<span class="nc" id="L103">					arraylistObject.add(movieTheatresMap);</span>
+				}
+			}
+<span class="nc" id="L106">		}</span>
+<span class="fc" id="L107">		return arraylistObject;</span>
+	}
+
+	public TreeMap&lt;String, Set&lt;String&gt;&gt; theatreMovies() throws FileNotFoundException {
+
+<span class="fc" id="L112">		scanner = new Scanner(new File(MovieConstants.FILE_PATH));</span>
+<span class="fc bfc" id="L113" title="All 2 branches covered.">		while (scanner.hasNextLine()) {</span>
+<span class="fc" id="L114">			String[] database2 = scanner.nextLine().split(&quot;,&quot;);</span>
+<span class="fc bfc" id="L115" title="All 2 branches covered.">			for (String theatre : Arrays.asList(database2[1])) {</span>
+<span class="fc" id="L116">				theatreMoviesList.put(theatre, new TreeSet&lt;&gt;());</span>
+<span class="fc bfc" id="L117" title="All 2 branches covered.">				for (String movie : Arrays.asList(database2[2])) {</span>
+
+<span class="fc" id="L119">					Movie newMovie = new Movie(movie);</span>
+<span class="fc" id="L120">					theatreMoviesList.get(theatre).add(newMovie.getMovieTitle());</span>
+<span class="fc" id="L121">				}</span>
+
+<span class="fc" id="L123">			}</span>
+<span class="fc" id="L124">		}</span>
+<span class="fc" id="L125">		return theatreMoviesList;</span>
+	}
+
+	public List&lt;TreeMap&lt;String, Set&lt;String&gt;&gt;&gt; particularTheatreMovies(String theatre) throws FileNotFoundException {
+
+<span class="fc" id="L130">		TreeMap&lt;String, Set&lt;String&gt;&gt; theatreMoviesMap = new TreeMap&lt;&gt;();</span>
+<span class="fc" id="L131">		arraylistObject = new ArrayList&lt;&gt;();</span>
+
+<span class="pc bpc" id="L133" title="1 of 2 branches missed.">		for (Entry&lt;String, Set&lt;String&gt;&gt; entry : theatreMoviesList.entrySet()) {</span>
+<span class="nc" id="L134">			String key = entry.getKey();</span>
+<span class="nc bnc" id="L135" title="All 2 branches missed.">			if (key.toLowerCase().contains(theatre.toLowerCase())) {</span>
+<span class="nc" id="L136">				theatreMoviesMap.put(key, new TreeSet&lt;&gt;());</span>
+<span class="nc" id="L137">				theatreMoviesMap.get(key).addAll(entry.getValue());</span>
+<span class="nc bnc" id="L138" title="All 2 branches missed.">				if (!arraylistObject.contains(theatreMoviesMap)) {</span>
+<span class="nc" id="L139">					arraylistObject.add(theatreMoviesMap);</span>
+				}
+			}
+<span class="nc" id="L142">		}</span>
+<span class="fc" id="L143">		return arraylistObject;</span>
+	}
+
+	public TreeMap&lt;String, TreeMap&lt;String, List&lt;String&gt;&gt;&gt; cityTheatreMovies() throws FileNotFoundException {
+
+<span class="fc" id="L148">		scanner = new Scanner(new File(MovieConstants.FILE_PATH));</span>
+<span class="fc bfc" id="L149" title="All 2 branches covered.">		while (scanner.hasNextLine()) {</span>
+<span class="fc" id="L150">			String[] database3 = scanner.nextLine().split(&quot;,&quot;);</span>
+
+<span class="fc bfc" id="L152" title="All 2 branches covered.">			for (String city : Arrays.asList(database3[0])) {</span>
+<span class="fc" id="L153">				cityTheatreMoviesList.put(city, new TreeMap&lt;&gt;());</span>
+
+<span class="fc bfc" id="L155" title="All 2 branches covered.">				for (String theatre : Arrays.asList(database3[1])) {</span>
+<span class="fc" id="L156">					cityTheatreMoviesList.get(city).put(theatre, new ArrayList&lt;&gt;());</span>
+
+<span class="fc bfc" id="L158" title="All 2 branches covered.">					for (String movie : Arrays.asList(database3[2])) {</span>
+<span class="pc bpc" id="L159" title="1 of 2 branches missed.">						if (!cityTheatreMoviesList.get(city).get(theatre).contains(movie)) {</span>
+<span class="fc" id="L160">							Movie newMovie = new Movie(movie);</span>
+<span class="fc" id="L161">							cityTheatreMoviesList.get(city).get(theatre).add(newMovie.getMovieTitle());</span>
+
+						}
+<span class="fc" id="L164">					}</span>
+<span class="fc" id="L165">				}</span>
+<span class="fc" id="L166">			}</span>
+
+<span class="fc" id="L168">		}</span>
+
+<span class="fc" id="L170">		return cityTheatreMoviesList;</span>
+
+	}
+
+	public List&lt;String&gt; particularCityTheatreMovies(String city) throws FileNotFoundException {
+
+<span class="fc" id="L176">		List&lt;String&gt; arraylistObject1 = new ArrayList&lt;&gt;();</span>
+
+<span class="pc bpc" id="L178" title="1 of 2 branches missed.">		for (Entry&lt;String, TreeMap&lt;String, List&lt;String&gt;&gt;&gt; entry : cityTheatreMoviesList.entrySet()) {</span>
+
+<span class="nc" id="L180">			String key = entry.getKey();</span>
+<span class="nc bnc" id="L181" title="All 4 branches missed.">			if (key.toLowerCase().contains(city.toLowerCase()) &amp;&amp; !arraylistObject1.contains(entry.getKey())) {</span>
+<span class="nc" id="L182">				arraylistObject1.add(entry.getKey() + &quot; : &quot; + entry.getValue());</span>
+			}
+<span class="nc" id="L184">		}</span>
+<span class="fc" id="L185">		return arraylistObject1;</span>
+	}
+
+	public Set&lt;String&gt; listMoviesWithRating(Double rating) throws FileNotFoundException {
+
+<span class="fc" id="L190">		TreeMap&lt;Double, List&lt;String&gt;&gt; ratingMoviesList = new TreeMap&lt;&gt;();</span>
+
+<span class="fc" id="L192">		Set&lt;String&gt; moviesRatingList = new TreeSet&lt;&gt;();</span>
+
+<span class="fc" id="L194">		scanner = new Scanner(new File(MovieConstants.FILE_PATH));</span>
+<span class="fc bfc" id="L195" title="All 2 branches covered.">		while (scanner.hasNextLine()) {</span>
+<span class="fc" id="L196">			String[] database4 = scanner.nextLine().split(&quot;,&quot;);</span>
+
+<span class="fc bfc" id="L198" title="All 2 branches covered.">			for (String rating1 : Arrays.asList(database4[4])) {</span>
+<span class="fc bfc" id="L199" title="All 2 branches covered.">				if (!ratingMoviesList.containsKey(Double.parseDouble(rating1))) {</span>
+<span class="fc" id="L200">					ratingMoviesList.put(Double.parseDouble(rating1), new ArrayList&lt;&gt;());</span>
+				}
+
+<span class="fc bfc" id="L203" title="All 2 branches covered.">				for (String movie : Arrays.asList(database4[2])) {</span>
+
+<span class="fc" id="L205">					Movie newMovie = new Movie(movie);</span>
+<span class="fc" id="L206">					ratingMoviesList.get(Double.parseDouble(rating1)).add(newMovie.getMovieTitle());</span>
+<span class="fc" id="L207">				}</span>
+
+<span class="fc" id="L209">			}</span>
+<span class="fc" id="L210">		}</span>
+
+<span class="fc bfc" id="L212" title="All 2 branches covered.">		for (Entry&lt;Double, List&lt;String&gt;&gt; entry : ratingMoviesList.entrySet()) {</span>
+<span class="fc bfc" id="L213" title="All 2 branches covered.">			if (rating == null) {</span>
+<span class="fc" id="L214">				throw new NullPointerException(&quot;Please enter proper values!!!&quot;);</span>
+			}
+<span class="fc" id="L216">			Double key = entry.getKey();</span>
+<span class="fc bfc" id="L217" title="All 2 branches covered.">			if (key &gt;= rating) {</span>
+<span class="fc" id="L218">				moviesRatingList.addAll(entry.getValue());</span>
+			}
+<span class="fc" id="L220">		}</span>
+<span class="fc" id="L221">		return moviesRatingList;</span>
+	}
+
+	public TreeMap&lt;String, TreeMap&lt;String, List&lt;String&gt;&gt;&gt; theatreMovieShowTimes() throws FileNotFoundException {
+
+<span class="fc" id="L226">		scanner = new Scanner(new File(MovieConstants.FILE_PATH));</span>
+<span class="fc bfc" id="L227" title="All 2 branches covered.">		while (scanner.hasNextLine()) {</span>
+<span class="fc" id="L228">			String[] database5 = scanner.nextLine().split(&quot;,&quot;);</span>
+
+<span class="fc bfc" id="L230" title="All 2 branches covered.">			for (String theatre : Arrays.asList(database5[1])) {</span>
+<span class="fc" id="L231">				theatreMoviesShowsList.put(theatre, new TreeMap&lt;&gt;());</span>
+
+<span class="fc bfc" id="L233" title="All 2 branches covered.">				for (String movie : Arrays.asList(database5[2])) {</span>
+<span class="fc" id="L234">					theatreMoviesShowsList.get(theatre).put(movie, new ArrayList&lt;&gt;());</span>
+
+<span class="fc bfc" id="L236" title="All 2 branches covered.">					for (String show : Arrays.asList(database5[5])) {</span>
+<span class="pc bpc" id="L237" title="1 of 2 branches missed.">						if (!theatreMoviesShowsList.get(theatre).get(movie).contains(show)) {</span>
+<span class="fc" id="L238">							theatreMoviesShowsList.get(theatre).get(movie).add(show);</span>
+
+						}
+<span class="fc" id="L241">					}</span>
+<span class="fc" id="L242">				}</span>
+<span class="fc" id="L243">			}</span>
+<span class="fc" id="L244">		}</span>
+<span class="fc" id="L245">		return theatreMoviesShowsList;</span>
+	}
+
+	public List&lt;String&gt; particluarTheatreMovieShowTimes(String theatre) throws FileNotFoundException {
+
+<span class="nc" id="L250">		List&lt;String&gt; arraylistObject1 = new ArrayList&lt;&gt;();</span>
+
+<span class="nc bnc" id="L252" title="All 2 branches missed.">		for (Entry&lt;String, TreeMap&lt;String, List&lt;String&gt;&gt;&gt; entry : theatreMoviesShowsList.entrySet()) {</span>
+<span class="nc" id="L253">			String key = entry.getKey();</span>
+<span class="nc bnc" id="L254" title="All 2 branches missed.">			if (key.toLowerCase().contains(theatre.toLowerCase())) {</span>
+<span class="nc" id="L255">				arraylistObject1.add(entry.getKey() + &quot; : &quot; + entry.getValue());</span>
+			}
+<span class="nc" id="L257">		}</span>
+<span class="nc" id="L258">		return arraylistObject1;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

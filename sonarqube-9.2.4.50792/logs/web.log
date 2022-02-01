@@ -1,0 +1,6 @@
+2022.01.20 00:26:45 ERROR web[AX5yUuCfUFZrh1XmAAkj][o.e.d.s.a.b.h.DateHistogramAggregationBuilder] [interval] on [date_histogram] is deprecated, use [fixed_interval] or [calendar_interval] in the future.
+2022.01.20 00:26:48 ERROR web[AX5yUuCfUFZrh1XmAAkl][o.e.d.s.a.b.h.DateHistogramAggregationBuilder] [interval] on [date_histogram] is deprecated, use [fixed_interval] or [calendar_interval] in the future.
+2022.01.20 00:26:55 ERROR web[AX5yUuCfUFZrh1XmAAkm][o.e.d.s.a.b.h.DateHistogramAggregationBuilder] [interval] on [date_histogram] is deprecated, use [fixed_interval] or [calendar_interval] in the future.
+2022.01.20 00:27:11 ERROR web[AX5yUuCfUFZrh1XmAAkn][o.e.d.s.a.b.h.DateHistogramAggregationBuilder] [interval] on [date_histogram] is deprecated, use [fixed_interval] or [calendar_interval] in the future.
+2022.01.20 00:27:15 ERROR web[AX5yUuCfUFZrh1XmAAko][o.e.d.s.a.b.h.DateHistogramAggregationBuilder] [interval] on [date_histogram] is deprecated, use [fixed_interval] or [calendar_interval] in the future.
+2022.01.20 00:32:28 ERROR web[AX5yUuCfUFZrh1XmAAlt][o.e.d.s.a.b.h.DateHistogramAggregationBuilder] [interval] on [date_histogram] is deprecated, use [fixed_interval] or [calendar_interval] in the future.

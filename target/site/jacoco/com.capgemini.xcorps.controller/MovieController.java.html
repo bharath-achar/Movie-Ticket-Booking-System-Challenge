@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MovieController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Movie Ticket Bookig System</a> &gt; <a href="index.source.html" class="el_package">com.capgemini.xcorps.controller</a> &gt; <span class="el_source">MovieController.java</span></div><h1>MovieController.java</h1><pre class="source lang-java linenums">package com.capgemini.xcorps.controller;
+
+import java.io.FileNotFoundException;
+import java.util.List;
+import java.util.Set;
+import java.util.SortedMap;
+import java.util.TreeMap;
+import java.util.TreeSet;
+
+import com.capgemini.xcorps.service.MovieService;
+import com.capgemini.xcorps.service.MovieServiceImpl;
+
+<span class="fc" id="L13">public class MovieController {</span>
+
+<span class="fc" id="L15">	MovieService movieService = new MovieServiceImpl();</span>
+
+	// GET /allCityTheatres
+	public Set&lt;String&gt; cityTheatres() throws FileNotFoundException {
+<span class="fc" id="L19">		return movieService.cityTheatres().keySet();</span>
+	}
+
+	// GET /cityTheatres/city
+	public List&lt;TreeMap&lt;String, Set&lt;String&gt;&gt;&gt; particularCityTheatres(String city) throws FileNotFoundException {
+<span class="fc" id="L24">		return movieService.particularCityTheatres(city);</span>
+	}
+
+	// GET /allMovieTheatres
+	public Set&lt;String&gt; movieTheatres() throws FileNotFoundException {
+<span class="fc" id="L29">		return movieService.movieTheatres().keySet();</span>
+	}
+
+	// GET /movieTheatres/movie
+	public List&lt;TreeMap&lt;String, Set&lt;String&gt;&gt;&gt; particularMovieTheatres(String movie) throws FileNotFoundException {
+<span class="fc" id="L34">		return movieService.particularMovieTheatres(movie);</span>
+	}
+
+	// GET /allTheatreMovies
+	public Set&lt;String&gt; theatreMovies() throws FileNotFoundException {
+<span class="fc" id="L39">		return movieService.theatreMovies().keySet();</span>
+	}
+
+	// GET /theatreMovies/theatre
+	public List&lt;TreeMap&lt;String, Set&lt;String&gt;&gt;&gt; particularTheatreMovies(String theatre) throws FileNotFoundException {
+<span class="fc" id="L44">		return movieService.particularTheatreMovies(theatre);</span>
+	}
+
+	// GET /allCityTheatreMovies
+	public SortedMap&lt;String, TreeMap&lt;String, List&lt;String&gt;&gt;&gt; cityTheatreMovies() throws FileNotFoundException {
+<span class="fc" id="L49">		return movieService.cityTheatreMovies();</span>
+	}
+
+	// GET /cityTheatreMovies/city
+	public List&lt;String&gt; particularCityTheatreMovies(String city) throws FileNotFoundException {
+<span class="fc" id="L54">		return movieService.particularCityTheatreMovies(city);</span>
+	}
+
+	// GET /allMoviesWithRating/rating
+	public Set&lt;String&gt; listMoviesWithRating(Double rating) throws FileNotFoundException {
+<span class="fc" id="L59">		Set&lt;String&gt; listMoviesWithRating1 = new TreeSet&lt;&gt;();</span>
+
+<span class="fc" id="L61">		Set&lt;String&gt; listMoviesWithRating = movieService.listMoviesWithRating(rating);</span>
+
+<span class="pc bpc" id="L63" title="1 of 2 branches missed.">		if (rating &lt; 0) {</span>
+<span class="nc" id="L64">			System.err.println(&quot;Please enter proper values&quot;);</span>
+		}
+
+<span class="fc bfc" id="L67" title="All 2 branches covered.">		for (String movieRating : listMoviesWithRating) {</span>
+<span class="pc bpc" id="L68" title="1 of 2 branches missed.">			if (!listMoviesWithRating1.contains(movieRating)) {</span>
+<span class="fc" id="L69">				listMoviesWithRating1.add(movieRating);</span>
+
+			}
+<span class="fc" id="L72">		}</span>
+<span class="fc" id="L73">		return listMoviesWithRating1;</span>
+
+	}
+
+	// GET allTheatreMovieShows
+	public SortedMap&lt;String, TreeMap&lt;String, List&lt;String&gt;&gt;&gt; theatreMovieShowTimes() throws FileNotFoundException {
+
+<span class="fc" id="L80">		return movieService.theatreMovieShowTimes();</span>
+		
+	}
+
+	// GET /theatreMovieShows/theatre
+	public List&lt;String&gt; particluarTheatreMovieShowTimes(String theatre) throws FileNotFoundException {
+<span class="nc" id="L86">		return movieService.particluarTheatreMovieShowTimes(theatre);</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

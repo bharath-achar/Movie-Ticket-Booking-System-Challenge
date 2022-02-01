@@ -1,0 +1,275 @@
+2022.01.20 00:01:35 INFO  ce[][o.s.c.t.CeWorkerImpl] Execute task | project=com.capgemini.xcorps:movie-ticket-booking-system | type=REPORT | id=AX5zm7ysMTVrdQDVsbAh | submitter=admin
+2022.01.20 00:01:35 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Extract report | status=SUCCESS | time=111ms
+2022.01.20 00:01:35 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Persist scanner context | status=SUCCESS | time=4ms
+2022.01.20 00:01:35 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Propagate analysis warnings from scanner report | status=SUCCESS | time=2ms
+2022.01.20 00:01:35 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Generate analysis UUID | status=SUCCESS | time=0ms
+2022.01.20 00:01:35 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Load analysis metadata | status=SUCCESS | time=1ms
+2022.01.20 00:01:35 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Initialize | status=SUCCESS | time=0ms
+2022.01.20 00:01:35 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Build tree of components | components=19 | status=SUCCESS | time=9ms
+2022.01.20 00:01:35 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Validate project | status=SUCCESS | time=2ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Load quality profiles | status=SUCCESS | time=840ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Load Quality gate | status=SUCCESS | time=2ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Load new code period | status=SUCCESS | time=2ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Detect file moves | reportFiles=10 | dbFiles=10 | addedFiles=0 | status=SUCCESS | time=1ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Load duplications | duplications=0 | status=SUCCESS | time=3ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Compute cross project duplications | status=SUCCESS | time=0ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Compute size measures | status=SUCCESS | time=5ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Compute new coverage | status=SUCCESS | time=47ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Compute coverage measures | status=SUCCESS | time=3ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Compute comment measures | status=SUCCESS | time=0ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Compute duplication measures | status=SUCCESS | time=1ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Compute size measures on new code | status=SUCCESS | time=0ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Compute language distribution | status=SUCCESS | time=0ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Compute test measures | status=SUCCESS | time=1ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Compute complexity measures | status=SUCCESS | time=0ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Load measure computers | status=SUCCESS | time=0ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Compute Quality Profile status | status=SUCCESS | time=23ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Execute component visitors | status=SUCCESS | time=68ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Checks executed after computation of measures | status=SUCCESS | time=0ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Compute Quality Gate measures | status=SUCCESS | time=2ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Compute Quality profile measures | status=SUCCESS | time=1ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Generate Quality profile events | status=SUCCESS | time=5ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Generate Quality gate events | status=SUCCESS | time=5ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Check upgrade possibility for not analyzed code files. | status=SUCCESS | time=0ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Persist components | status=SUCCESS | time=4ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Persist analysis | status=SUCCESS | time=1ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Persist analysis properties | status=SUCCESS | time=2ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Persist measures | inserts=60 | status=SUCCESS | time=25ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Persist live measures | insertsOrUpdates=1030 | status=SUCCESS | time=159ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Persist duplication data | insertsOrUpdates=0 | status=SUCCESS | time=0ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Persist new ad hoc Rules | status=SUCCESS | time=0ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Persist issues | cacheSize=0 bytes | inserts=0 | updates=0 | merged=0 | status=SUCCESS | time=0ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Persist project links | status=SUCCESS | time=1ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Persist events | status=SUCCESS | time=2ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Persist sources | status=SUCCESS | time=26ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Persist cross project duplications | status=SUCCESS | time=0ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Enable analysis | status=SUCCESS | time=2ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Update last usage date of quality profiles | status=SUCCESS | time=2ms
+2022.01.20 00:01:36 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Purge db | status=SUCCESS | time=68ms
+2022.01.20 00:01:37 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Index analysis | status=SUCCESS | time=399ms
+2022.01.20 00:01:37 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Update need issue sync for branch | status=SUCCESS | time=1ms
+2022.01.20 00:01:37 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Send issue notifications | newIssuesNotifs=0 | newIssuesDeliveries=0 | myNewIssuesNotifs=0 | myNewIssuesDeliveries=0 | changesNotifs=0 | changesDeliveries=0 | status=SUCCESS | time=1ms
+2022.01.20 00:01:37 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Publish task results | status=SUCCESS | time=0ms
+2022.01.20 00:01:37 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.s.ComputationStepExecutor] Trigger refresh of Portfolios and Applications | status=SUCCESS | time=0ms
+2022.01.20 00:01:37 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.p.a.p.PostProjectAnalysisTasksExecutor] Webhooks | globalWebhooks=0 | projectWebhooks=0 | status=SUCCESS | time=1ms
+2022.01.20 00:01:37 INFO  ce[AX5zm7ysMTVrdQDVsbAh][o.s.c.t.CeWorkerImpl] Executed task | project=com.capgemini.xcorps:movie-ticket-booking-system | type=REPORT | id=AX5zm7ysMTVrdQDVsbAh | submitter=admin | status=SUCCESS | time=1962ms
+2022.01.20 00:04:48 INFO  ce[][o.s.c.t.CeWorkerImpl] Execute task | project=com.capgemini.xcorps:movie-ticket-booking-system | type=REPORT | id=AX5znq_zMTVrdQDVsbAi | submitter=admin
+2022.01.20 00:04:48 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Extract report | status=SUCCESS | time=101ms
+2022.01.20 00:04:48 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Persist scanner context | status=SUCCESS | time=11ms
+2022.01.20 00:04:48 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Propagate analysis warnings from scanner report | status=SUCCESS | time=2ms
+2022.01.20 00:04:48 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Generate analysis UUID | status=SUCCESS | time=0ms
+2022.01.20 00:04:48 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Load analysis metadata | status=SUCCESS | time=2ms
+2022.01.20 00:04:48 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Initialize | status=SUCCESS | time=0ms
+2022.01.20 00:04:48 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Build tree of components | components=19 | status=SUCCESS | time=7ms
+2022.01.20 00:04:48 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Validate project | status=SUCCESS | time=2ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Load quality profiles | status=SUCCESS | time=874ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Load Quality gate | status=SUCCESS | time=3ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Load new code period | status=SUCCESS | time=2ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Detect file moves | reportFiles=10 | dbFiles=10 | addedFiles=0 | status=SUCCESS | time=1ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Load duplications | duplications=0 | status=SUCCESS | time=3ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Compute cross project duplications | status=SUCCESS | time=0ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Compute size measures | status=SUCCESS | time=4ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Compute new coverage | status=SUCCESS | time=46ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Compute coverage measures | status=SUCCESS | time=4ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Compute comment measures | status=SUCCESS | time=0ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Compute duplication measures | status=SUCCESS | time=0ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Compute size measures on new code | status=SUCCESS | time=0ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Compute language distribution | status=SUCCESS | time=1ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Compute test measures | status=SUCCESS | time=0ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Compute complexity measures | status=SUCCESS | time=0ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Load measure computers | status=SUCCESS | time=1ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Compute Quality Profile status | status=SUCCESS | time=4ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Execute component visitors | status=SUCCESS | time=73ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Checks executed after computation of measures | status=SUCCESS | time=0ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Compute Quality Gate measures | status=SUCCESS | time=1ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Compute Quality profile measures | status=SUCCESS | time=0ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Generate Quality profile events | status=SUCCESS | time=2ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Generate Quality gate events | status=SUCCESS | time=3ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Check upgrade possibility for not analyzed code files. | status=SUCCESS | time=0ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Persist components | status=SUCCESS | time=7ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Persist analysis | status=SUCCESS | time=1ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Persist analysis properties | status=SUCCESS | time=1ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Persist measures | inserts=60 | status=SUCCESS | time=10ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Persist live measures | insertsOrUpdates=1030 | status=SUCCESS | time=160ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Persist duplication data | insertsOrUpdates=0 | status=SUCCESS | time=0ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Persist new ad hoc Rules | status=SUCCESS | time=0ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Persist issues | cacheSize=1.7 kB | inserts=0 | updates=2 | merged=0 | status=SUCCESS | time=6ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Persist project links | status=SUCCESS | time=1ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Persist events | status=SUCCESS | time=2ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Persist sources | status=SUCCESS | time=28ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Persist cross project duplications | status=SUCCESS | time=0ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Enable analysis | status=SUCCESS | time=2ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Update last usage date of quality profiles | status=SUCCESS | time=3ms
+2022.01.20 00:04:49 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Purge db | status=SUCCESS | time=20ms
+2022.01.20 00:04:50 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Index analysis | status=SUCCESS | time=397ms
+2022.01.20 00:04:50 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Update need issue sync for branch | status=SUCCESS | time=1ms
+2022.01.20 00:04:50 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Send issue notifications | newIssuesNotifs=0 | newIssuesDeliveries=0 | myNewIssuesNotifs=0 | myNewIssuesDeliveries=0 | changesNotifs=0 | changesDeliveries=0 | status=SUCCESS | time=2ms
+2022.01.20 00:04:50 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Publish task results | status=SUCCESS | time=0ms
+2022.01.20 00:04:50 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.s.ComputationStepExecutor] Trigger refresh of Portfolios and Applications | status=SUCCESS | time=0ms
+2022.01.20 00:04:50 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.p.a.p.PostProjectAnalysisTasksExecutor] Webhooks | globalWebhooks=0 | projectWebhooks=0 | status=SUCCESS | time=2ms
+2022.01.20 00:04:50 INFO  ce[AX5znq_zMTVrdQDVsbAi][o.s.c.t.CeWorkerImpl] Executed task | project=com.capgemini.xcorps:movie-ticket-booking-system | type=REPORT | id=AX5znq_zMTVrdQDVsbAi | submitter=admin | status=SUCCESS | time=1909ms
+2022.01.20 00:11:43 INFO  ce[][o.s.c.t.CeWorkerImpl] Execute task | project=com.capgemini.xcorps:movie-ticket-booking-system | type=REPORT | id=AX5zpQdsMTVrdQDVsbAj | submitter=admin
+2022.01.20 00:11:43 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Extract report | status=SUCCESS | time=278ms
+2022.01.20 00:11:43 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Persist scanner context | status=SUCCESS | time=7ms
+2022.01.20 00:11:43 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Propagate analysis warnings from scanner report | status=SUCCESS | time=7ms
+2022.01.20 00:11:43 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Generate analysis UUID | status=SUCCESS | time=0ms
+2022.01.20 00:11:43 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Load analysis metadata | status=SUCCESS | time=8ms
+2022.01.20 00:11:43 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Initialize | status=SUCCESS | time=0ms
+2022.01.20 00:11:43 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Build tree of components | components=19 | status=SUCCESS | time=16ms
+2022.01.20 00:11:43 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Validate project | status=SUCCESS | time=5ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Load quality profiles | status=SUCCESS | time=954ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Load Quality gate | status=SUCCESS | time=2ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Load new code period | status=SUCCESS | time=2ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Detect file moves | reportFiles=10 | dbFiles=10 | addedFiles=0 | status=SUCCESS | time=1ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Load duplications | duplications=0 | status=SUCCESS | time=2ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Compute cross project duplications | status=SUCCESS | time=0ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Compute size measures | status=SUCCESS | time=5ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Compute new coverage | status=SUCCESS | time=41ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Compute coverage measures | status=SUCCESS | time=2ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Compute comment measures | status=SUCCESS | time=0ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Compute duplication measures | status=SUCCESS | time=0ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Compute size measures on new code | status=SUCCESS | time=0ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Compute language distribution | status=SUCCESS | time=1ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Compute test measures | status=SUCCESS | time=0ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Compute complexity measures | status=SUCCESS | time=0ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Load measure computers | status=SUCCESS | time=0ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Compute Quality Profile status | status=SUCCESS | time=4ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Execute component visitors | status=SUCCESS | time=76ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Checks executed after computation of measures | status=SUCCESS | time=0ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Compute Quality Gate measures | status=SUCCESS | time=2ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Compute Quality profile measures | status=SUCCESS | time=0ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Generate Quality profile events | status=SUCCESS | time=2ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Generate Quality gate events | status=SUCCESS | time=2ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Check upgrade possibility for not analyzed code files. | status=SUCCESS | time=0ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Persist components | status=SUCCESS | time=18ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Persist analysis | status=SUCCESS | time=3ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Persist analysis properties | status=SUCCESS | time=2ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Persist measures | inserts=60 | status=SUCCESS | time=11ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Persist live measures | insertsOrUpdates=1029 | status=SUCCESS | time=213ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Persist duplication data | insertsOrUpdates=0 | status=SUCCESS | time=0ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Persist new ad hoc Rules | status=SUCCESS | time=0ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Persist issues | cacheSize=16.2 kB | inserts=0 | updates=21 | merged=0 | status=SUCCESS | time=24ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Persist project links | status=SUCCESS | time=1ms
+2022.01.20 00:11:44 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Persist events | status=SUCCESS | time=2ms
+2022.01.20 00:11:45 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Persist sources | status=SUCCESS | time=35ms
+2022.01.20 00:11:45 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Persist cross project duplications | status=SUCCESS | time=0ms
+2022.01.20 00:11:45 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Enable analysis | status=SUCCESS | time=2ms
+2022.01.20 00:11:45 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Update last usage date of quality profiles | status=SUCCESS | time=3ms
+2022.01.20 00:11:45 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Purge db | status=SUCCESS | time=22ms
+2022.01.20 00:11:45 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Index analysis | status=SUCCESS | time=565ms
+2022.01.20 00:11:45 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Update need issue sync for branch | status=SUCCESS | time=1ms
+2022.01.20 00:11:45 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Send issue notifications | newIssuesNotifs=0 | newIssuesDeliveries=0 | myNewIssuesNotifs=0 | myNewIssuesDeliveries=0 | changesNotifs=0 | changesDeliveries=0 | status=SUCCESS | time=2ms
+2022.01.20 00:11:45 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Publish task results | status=SUCCESS | time=0ms
+2022.01.20 00:11:45 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.s.ComputationStepExecutor] Trigger refresh of Portfolios and Applications | status=SUCCESS | time=0ms
+2022.01.20 00:11:45 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.p.a.p.PostProjectAnalysisTasksExecutor] Webhooks | globalWebhooks=0 | projectWebhooks=0 | status=SUCCESS | time=2ms
+2022.01.20 00:11:45 INFO  ce[AX5zpQdsMTVrdQDVsbAj][o.s.c.t.CeWorkerImpl] Executed task | project=com.capgemini.xcorps:movie-ticket-booking-system | type=REPORT | id=AX5zpQdsMTVrdQDVsbAj | submitter=admin | status=SUCCESS | time=2455ms
+2022.01.20 00:21:55 INFO  ce[][o.s.c.t.CeWorkerImpl] Execute task | project=com.capgemini.xcorps:movie-ticket-booking-system | type=REPORT | id=AX5zrmEQMTVrdQDVsbAk | submitter=admin
+2022.01.20 00:21:55 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Extract report | status=SUCCESS | time=81ms
+2022.01.20 00:21:55 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Persist scanner context | status=SUCCESS | time=2ms
+2022.01.20 00:21:55 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Propagate analysis warnings from scanner report | status=SUCCESS | time=1ms
+2022.01.20 00:21:55 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Generate analysis UUID | status=SUCCESS | time=0ms
+2022.01.20 00:21:55 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Load analysis metadata | status=SUCCESS | time=1ms
+2022.01.20 00:21:55 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Initialize | status=SUCCESS | time=0ms
+2022.01.20 00:21:55 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Build tree of components | components=19 | status=SUCCESS | time=6ms
+2022.01.20 00:21:55 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Validate project | status=SUCCESS | time=2ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Load quality profiles | status=SUCCESS | time=934ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Load Quality gate | status=SUCCESS | time=3ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Load new code period | status=SUCCESS | time=2ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Detect file moves | reportFiles=10 | dbFiles=10 | addedFiles=0 | status=SUCCESS | time=1ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Load duplications | duplications=0 | status=SUCCESS | time=3ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Compute cross project duplications | status=SUCCESS | time=0ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Compute size measures | status=SUCCESS | time=4ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Compute new coverage | status=SUCCESS | time=37ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Compute coverage measures | status=SUCCESS | time=2ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Compute comment measures | status=SUCCESS | time=0ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Compute duplication measures | status=SUCCESS | time=0ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Compute size measures on new code | status=SUCCESS | time=1ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Compute language distribution | status=SUCCESS | time=0ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Compute test measures | status=SUCCESS | time=0ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Compute complexity measures | status=SUCCESS | time=1ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Load measure computers | status=SUCCESS | time=0ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Compute Quality Profile status | status=SUCCESS | time=3ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Execute component visitors | status=SUCCESS | time=61ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Checks executed after computation of measures | status=SUCCESS | time=0ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Compute Quality Gate measures | status=SUCCESS | time=18ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Compute Quality profile measures | status=SUCCESS | time=1ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Generate Quality profile events | status=SUCCESS | time=2ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Generate Quality gate events | status=SUCCESS | time=2ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Check upgrade possibility for not analyzed code files. | status=SUCCESS | time=0ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Persist components | status=SUCCESS | time=5ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Persist analysis | status=SUCCESS | time=1ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Persist analysis properties | status=SUCCESS | time=1ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Persist measures | inserts=60 | status=SUCCESS | time=9ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Persist live measures | insertsOrUpdates=1022 | status=SUCCESS | time=166ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Persist duplication data | insertsOrUpdates=0 | status=SUCCESS | time=0ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Persist new ad hoc Rules | status=SUCCESS | time=0ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Persist issues | cacheSize=5.8 kB | inserts=0 | updates=7 | merged=0 | status=SUCCESS | time=6ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Persist project links | status=SUCCESS | time=2ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Persist events | status=SUCCESS | time=0ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Persist sources | status=SUCCESS | time=27ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Persist cross project duplications | status=SUCCESS | time=0ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Enable analysis | status=SUCCESS | time=2ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Update last usage date of quality profiles | status=SUCCESS | time=2ms
+2022.01.20 00:21:56 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Purge db | status=SUCCESS | time=21ms
+2022.01.20 00:21:57 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Index analysis | status=SUCCESS | time=370ms
+2022.01.20 00:21:57 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Update need issue sync for branch | status=SUCCESS | time=1ms
+2022.01.20 00:21:57 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Send issue notifications | newIssuesNotifs=0 | newIssuesDeliveries=0 | myNewIssuesNotifs=0 | myNewIssuesDeliveries=0 | changesNotifs=0 | changesDeliveries=0 | status=SUCCESS | time=2ms
+2022.01.20 00:21:57 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Publish task results | status=SUCCESS | time=0ms
+2022.01.20 00:21:57 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.s.ComputationStepExecutor] Trigger refresh of Portfolios and Applications | status=SUCCESS | time=0ms
+2022.01.20 00:21:57 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.p.a.p.PostProjectAnalysisTasksExecutor] Webhooks | globalWebhooks=0 | projectWebhooks=0 | status=SUCCESS | time=2ms
+2022.01.20 00:21:57 INFO  ce[AX5zrmEQMTVrdQDVsbAk][o.s.c.t.CeWorkerImpl] Executed task | project=com.capgemini.xcorps:movie-ticket-booking-system | type=REPORT | id=AX5zrmEQMTVrdQDVsbAk | submitter=admin | status=SUCCESS | time=1881ms
+2022.01.20 00:30:48 INFO  ce[][o.s.c.t.CeWorkerImpl] Execute task | project=com.capgemini.xcorps:movie-ticket-booking-system | type=REPORT | id=AX5ztoMCMTVrdQDVsbAl | submitter=admin
+2022.01.20 00:30:48 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Extract report | status=SUCCESS | time=95ms
+2022.01.20 00:30:48 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Persist scanner context | status=SUCCESS | time=17ms
+2022.01.20 00:30:48 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Propagate analysis warnings from scanner report | status=SUCCESS | time=2ms
+2022.01.20 00:30:48 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Generate analysis UUID | status=SUCCESS | time=0ms
+2022.01.20 00:30:48 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Load analysis metadata | status=SUCCESS | time=2ms
+2022.01.20 00:30:48 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Initialize | status=SUCCESS | time=0ms
+2022.01.20 00:30:48 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Build tree of components | components=19 | status=SUCCESS | time=8ms
+2022.01.20 00:30:48 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Validate project | status=SUCCESS | time=2ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Load quality profiles | status=SUCCESS | time=872ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Load Quality gate | status=SUCCESS | time=3ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Load new code period | status=SUCCESS | time=4ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Detect file moves | reportFiles=10 | dbFiles=10 | addedFiles=0 | status=SUCCESS | time=1ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Load duplications | duplications=0 | status=SUCCESS | time=4ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Compute cross project duplications | status=SUCCESS | time=0ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Compute size measures | status=SUCCESS | time=5ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Compute new coverage | status=SUCCESS | time=54ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Compute coverage measures | status=SUCCESS | time=4ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Compute comment measures | status=SUCCESS | time=0ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Compute duplication measures | status=SUCCESS | time=0ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Compute size measures on new code | status=SUCCESS | time=0ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Compute language distribution | status=SUCCESS | time=0ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Compute test measures | status=SUCCESS | time=0ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Compute complexity measures | status=SUCCESS | time=0ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Load measure computers | status=SUCCESS | time=0ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Compute Quality Profile status | status=SUCCESS | time=5ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Execute component visitors | status=SUCCESS | time=56ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Checks executed after computation of measures | status=SUCCESS | time=0ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Compute Quality Gate measures | status=SUCCESS | time=9ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Compute Quality profile measures | status=SUCCESS | time=0ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Generate Quality profile events | status=SUCCESS | time=1ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Generate Quality gate events | status=SUCCESS | time=3ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Check upgrade possibility for not analyzed code files. | status=SUCCESS | time=0ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Persist components | status=SUCCESS | time=5ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Persist analysis | status=SUCCESS | time=1ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Persist analysis properties | status=SUCCESS | time=3ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Persist measures | inserts=60 | status=SUCCESS | time=11ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Persist live measures | insertsOrUpdates=1015 | status=SUCCESS | time=152ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Persist duplication data | insertsOrUpdates=0 | status=SUCCESS | time=0ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Persist new ad hoc Rules | status=SUCCESS | time=0ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Persist issues | cacheSize=5.1 kB | inserts=0 | updates=6 | merged=0 | status=SUCCESS | time=8ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Persist project links | status=SUCCESS | time=1ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Persist events | status=SUCCESS | time=2ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Persist sources | status=SUCCESS | time=27ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Persist cross project duplications | status=SUCCESS | time=0ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Enable analysis | status=SUCCESS | time=1ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Update last usage date of quality profiles | status=SUCCESS | time=2ms
+2022.01.20 00:30:49 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Purge db | status=SUCCESS | time=22ms
+2022.01.20 00:30:50 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Index analysis | status=SUCCESS | time=474ms
+2022.01.20 00:30:50 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Update need issue sync for branch | status=SUCCESS | time=0ms
+2022.01.20 00:30:50 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Send issue notifications | newIssuesNotifs=0 | newIssuesDeliveries=0 | myNewIssuesNotifs=0 | myNewIssuesDeliveries=0 | changesNotifs=0 | changesDeliveries=0 | status=SUCCESS | time=1ms
+2022.01.20 00:30:50 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Publish task results | status=SUCCESS | time=0ms
+2022.01.20 00:30:50 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.s.ComputationStepExecutor] Trigger refresh of Portfolios and Applications | status=SUCCESS | time=0ms
+2022.01.20 00:30:50 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.p.a.p.PostProjectAnalysisTasksExecutor] Webhooks | globalWebhooks=0 | projectWebhooks=0 | status=SUCCESS | time=2ms
+2022.01.20 00:30:50 INFO  ce[AX5ztoMCMTVrdQDVsbAl][o.s.c.t.CeWorkerImpl] Executed task | project=com.capgemini.xcorps:movie-ticket-booking-system | type=REPORT | id=AX5ztoMCMTVrdQDVsbAl | submitter=admin | status=SUCCESS | time=1992ms
